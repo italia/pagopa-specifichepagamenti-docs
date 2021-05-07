@@ -15,7 +15,7 @@ Nel caso di un pagamento effettuato direttamente tramite i servizi del PSP (si v
 * `identificativoUnivocoRiscossione`: pari al paymentToken generato dalla piattaforma e riportato all’interno della ricevuta acquisita dall’Ente Beneficiario.
 * `indiceDatiSingoloPagamento`: identificativo della porzione dell’importo indicato all’interno della ricevuta
 * `singoloImportoPagato`: importo parziale
-* `codiceEsitoSingoloPagamento`: 1
+* `codiceEsitoSingoloPagamento`: 0
 * `dataEsitoSingoloPagamento`: data del pagamento riportata all’interno della ricevuta
 
 Pertanto, qualsiasi Ente Beneficiario è in grado di riconciliare il pagamento ricercando per ogni _datoSingoloPagamento_ la corrispondente ricevuta identificata da _paymentToken_ e _IUV_, selezionando l’importo parziale corrispondente al campo _indiceDatiSingoloPagamento_.
@@ -27,5 +27,5 @@ Nel caso di un pagamento effettuato tramite i servizi di pagamento resi disponib
 * `identificativoUnivocoVersamento`: IUV della richiesta di pagamento, il medesimo contenuto all'interno della RPT ricevuta
 * `identificativoUnivocoRiscossione`: il medesimo contenuto all'interno della RT emessa dal PSP
 * `singoloImportoPagato`: importo parziale
-* `codiceEsitoSingoloPagamento`: 1
+* `codiceEsitoSingoloPagamento`: 0
 * `dataEsitoSingoloPagamento`: data del pagamento riportata all’interno della ricevuta.
